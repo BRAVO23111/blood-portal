@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.flex{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 100px;
+    padding: 0 40px;
+}
+.navbar ul{
+    display: flex;
+    padding-left:40px ;
+}
+.navbar a{
+    padding: 10px;
+    margin: 0 5pxa;
+
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+.navbar a:hover {
+    border-bottom: 2px rgb(108, 11, 11) solid;
+  }
+.container{
+    max-width: 1100px;
+    padding: 0px 10px;
+    margin: 0px 80px;
+}
+.navbar{
+    height:100px
+}
+.customer-registration {
+    height: 400px;
+    background-color: rgb(58, 58, 176);
+    font-size: 24px;
+    position: relative;
+}
+.grid{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    height: 100%;
+    margin-top: 30px;   
+    align-items: center;
+    gap: 150px;
+    overflow: visible;
+}
+.customer-registration-form{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    height: 510px;
+    z-index: 100;
+    width: 400px;
+    margin: 20px;
+    justify-self: flex-end;
+}
+.form-control{
+    padding: 20px;
+}
+.customer-registration-form input[type = 'text'],
+.customer-registration-form input[type = 'email'],
+.customer-registration-form input[type = 'tel']
+{
+    border: 0px;
+    border-bottom: 1px solid rgb(74, 104, 130);
+    width: 100%;
+    margin: -20px;
+    font-size: 15px;
+    
+}
+.customer-registration h2 {
+    font-size: 20px;
+}
+.customer-registration h1 {
+    font-size: 35px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: rgb(14, 71, 97);
+    border: none;
+    background-color: rgb(129, 198, 196);
+    border-radius: 5px;
+    font-size: 18px;
+  }
+.submit-button{
+    padding-top: 20px;
+    /* margin: 20px; */
+}
+.customer-registration-form input[type='radio']{
+    margin-right: 10px;
+}
+.customer-registration input:focus{
+    outline: none;
+    font-size: 20px;
+
+}
+.customer-registration::before,
+.customer-registration::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -60px;
+  right: 0;
+  left: 0;
+  background: rgb(58, 58, 176);
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  /* -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg); */
+
+}
+.customer-registration-text{
+    padding-left: 60px;
+    width: 100%;
+    animation: slideInFromLeft 1s ease-in;
+}
+.stats-heading{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 120px;
+}
+.stats-heading-text{
+    padding: 100px 60px;
+    margin-top:300px ;
+    font-size: 35px;
+    justify-content: center;
+    /* margin-left: 60px; */
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+.picture{
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    padding-left: 25px;
+}
+.stats-picture{
+    padding: 60px;
+    width: 400px;
+    padding-right: 70px;
+    margin-top:300px ;
+    margin-right:70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+/* .stats::before, */
+.emergency-contact::before{
+    content: '';
+    background-color: rgb(58, 58, 176);
+    width: 1425px;
+    border: 0;
+    height: 100px;
+    margin-top: 220px;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 2 fr 1fr;
+    grid-gap: 100px;
+    
+}
+.emergency{
+    background-color: rgb(58, 58, 176);
+    margin-top: -40px;
+    height: 650px;
+    width: 1425px;
+    border: -60px;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    gap: 250px;
+}
+.emergency-text h2{
+    padding: 200px 70px ;
+    /* margin-left: 40px; */
+    font-size: 45px;
+    justify-content: center;
+    width: 100%;
+}
+.emergency-text{
+    margin-left: 50px;
+}
+.emergency-area{
+    /* width: 600px;
+    margin-top: 80px;
+    bottom: 100px;
+    height: 40%;
+    align-items: center; */
+    background-color: rgb(58, 58, 176);
+    padding: 60px;
+    width: 459px;
+    padding-right: 70px;
+    margin-top:100px ;
+    margin-bottom:100px ;
+    margin-right:70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 30px;
+    margin: left 39px; ;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(112, 5, 5);
+    border-radius: 5px;
+    font-size: 18px;
+    font-size: 40px;
+}
+.emergency-area h2{
+    /* margin-top: 127px; */
+    font-size: 35px;
+}
